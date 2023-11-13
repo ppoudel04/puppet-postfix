@@ -76,7 +76,6 @@ define postfix::transport (
     lens    => 'Postfix_Transport.lns',
     incl    => $file,
     changes => $changes,
-    require => Augeas::Lens['postfix_transport'],
   }
 
   if defined(Package['postfix']) {
